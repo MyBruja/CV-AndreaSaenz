@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="section">
+            <div class="subsection">
+                <h1>Andrea Aparicio Sáenz</h1>
+                <p>Comunicación visual y Desarrollo web</p>
+                <div class="status">
+                    <p class="p-status">Disponible para trabajar</p>
+                    <div class="circle"></div>
+                </div>
+                <img class="perfil" src="imagenes/WhatsApp Image 2024-01-30 at 17.14.22.jpeg" alt="">
+            </div>
+            <div class="subsection">
+                <p>Soy estudiosa de la comunicación y cuento con gran capacidad de auto aprendizaje.</p>
+                <div>
+                    <button class="btn-black">Work</button>
+                    <button class="btn-lined">CV DOWNLOAD</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">from_name</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                        <label for="email_id">email_id</label>
+                        <input type="text" name="email_id" id="email_id">
+                    </div>
+                    <div class="field">
+                        <label for="message">message</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+
+                    <input type="submit" id="button" value="Send Email">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('w_SplBFv_K3gGmUvY')
+    </script>
+    <script src="email.js"></script>
+
+</body>
+
+</html>
